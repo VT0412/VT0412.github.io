@@ -10,7 +10,7 @@ body {
 .header-container {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 300px;
 }
 header {
   background-color: black;
@@ -40,7 +40,11 @@ header {
   text-align: center;
   padding: 10px;
   font-size: 30px;
+  padding-top: 10px;
   flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav {
   background-color: lightgrey;
@@ -49,42 +53,55 @@ nav {
   text-align: left;
   padding: 10px 10px 10px 25px;
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.Home {
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+  transition: 0.2s ease-out;
+  font-size: larger;
+}
+.Home:hover {
+  color: black;
+  border: 3px solid black;
+  transform: translateY(-4px);
 }
 .container {
-  border: 2px solid orange;
+  border-right: 2px solid orange;
+  border-left: 2px solid orange;
   display: flex;
   flex: 1;
 }
 #innehåll {
   padding: 20px;
   flex: 3;
-  display: flex;
-  flex-direction: column;
 }
-#blog-heading {
-  flex: 1;
+h5 {
+  margin: 5px 0 5px 0;
 }
-#blog-post {
-  flex: 2;
-  display: flex;
+.pic1 {
+  float: left;
+  margin-top: 1em;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 300px;
+  width: 400px;
 }
-#blog-text {
-  margin-left: 10px;
-}
-#para {
-  margin-top: 0;
-}
-.inlägg {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-h2 {
-  margin-left: 5px;
-}
-.linje {
-  border-bottom: 1px solid black;
-  box-shadow: 0px 2px 2px 1px;
+.pic2 {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 180px;
+  width: 250px;
 }
 #sidebar {
   padding: 20px;
@@ -117,6 +134,44 @@ li {
 }
 #search {
   text-align: center;
+}
+#linje2 {
+  border-bottom: 1px solid black;
+  box-shadow: 0px 2px 2px 1px;
+  width: 75%;
+}
+#aboutMe {
+  border-right: 2px solid orange;
+  border-left: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 40px 10px;
+}
+#ovanför {
+  background-color: lightgrey;
+  height: 70px;
+  width: 650px;
+  border: 1px solid black;
+  margin-left: 10px;
+  display: flex;
+}
+#ovanför img {
+  padding: 10px;
+  margin-right: 10px;
+}
+#länkar {
+  padding: 20px;
+  margin-left: 80px;
+}
+#länkar .btn1 {
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+#nedanför {
+  height: 120px;
+  width: 650px;
+  border: 1px solid black;
+  margin-left: 10px;
 }
 .footer-container {
   display: flex;
